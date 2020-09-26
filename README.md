@@ -1,6 +1,6 @@
 # Estudos sobre FLEXBOX
 
-Link para os videos que gravei estudando: https://www.youtube.com/playlist?list=PLJa9e-ROBLypvJvZvy3o6fXgT2yxunuqn
+Link dos videos que gravei enquanto estudava: https://www.youtube.com/playlist?list=PLJa9e-ROBLypvJvZvy3o6fXgT2yxunuqn
 
 Flexbox é destinado à criação de layout em uma dimensão, horizontal ou vertical, já o Grid layout à criação de layout em duas dimensões, linhas e colunas.
 Flex container é um elemento de marcação contendo elementos filhos e destinado a criar um contexto de formatação flex para este elementos filhos.
