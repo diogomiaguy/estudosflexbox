@@ -90,3 +90,54 @@ align-items: stretch;
 
 #### Propriedade align-content
 Para utilizar o align-content precisamos que o container flex (pai) tenha um heigth definido e que esse valor tem que ser maior que a soma das linhas dos filhos. Use o wrap pelo amor de Deus.
+
+## AGORA SOBRE OS ITENS
+#### Propriedade grow
+Destinado a definir o fator de crescimento do flex item dentro do container quando nele há espaço disponível. 
+Pega o espaço restante e divide pelo valor do grow definido no item.
+Como usar:
+```
+flex-grow: N;(definir um numero)
+```
+
+#### Propriedade shrink
+Destinado a definir o fator de encolhimento do flex item dentro do container quando a largura do container for menor do que a soma das larguras dos flex items. Nele temos as seguintes opções: 
+```
+flex-shrink: 1; 
+flex-shrink: 0; 
+flex-shrink: número;
+```
+
+#### Propriedade Basis
+Destinado a definir a dimensão inicial do flex item dentro do container, nos sentidos largura ou altura. Indica o tamanho inicial do flex item ANTES da distribuição do espaço restante. Nele temos as seguintes opções: 
+```
+flex-basis: auto;
+flex-basis: unidade;
+flex-basis: 0;
+```
+
+#### Propriedade flex
+Propriedade que é a forma abreviada de se declarar as propriedades flex-grow, flex-shrink e flex-basis de uma só vez. O único valor obrigatório dessa propriedade é o flex-basis. O valor inicial dessa propriedade é 1 0 auto. É recomendado utilizar a propriedade flex ao invés de cada propriedade separada. Utilização: 
+```
+flex: 1; // Define flex-grow: 1; flex-shrink: 1; e flex-basis: 0; 
+flex: 0 1 auto; // Esse é o padrão,
+flex: 2; // Define exatamente da mesma forma que o flex: 1; porém neste caso o flex-grow será de 2, o flex-shrink continuará 1 e o flex-basis 0.
+flex: 3 2 300px; // flex-grow: 3, flex-shrink: 2 e flex-basis: 300px;
+```
+
+#### Propriedade order
+Destinado a reordenar os flex itens dentro do container pai sem zuar a ordem que eles ocupam na marcação. Seu valor inicial é zero. Como usar: 
+```
+order: N ; (definir um numero)
+```
+
+#### Propriedade align-self
+Destinado ao alinhamento individual dos flex itens dentro do container pai e segundo a direção e sentido eixo. Esse alinhamento acontece tanto em linha como em coluna. Nele temos as seguintes opções: 
+```
+align-self: stretch;
+align-self: baseline; //alinha conforme a tipografia
+align-self: center; //alinha no centro
+align-self: flex-end; //alinha ao final
+align-self: flex-start; //alinha no inicio
+align-self: auto;
+```
