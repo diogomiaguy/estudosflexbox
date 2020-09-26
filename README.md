@@ -1,3 +1,5 @@
+*obs.: os textos não passaram por revisão.
+
 # Estudos sobre FLEXBOX
 
 Link dos videos que gravei enquanto estudava: https://www.youtube.com/playlist?list=PLJa9e-ROBLypvJvZvy3o6fXgT2yxunuqn
